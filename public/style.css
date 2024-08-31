@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(246, 246, 246);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: transform 0.2s ease-in-out;
+}
+
+.centralize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centralize2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao {
+    max-width: 450px;
+    width: 95vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(218, 5, 5);
+    box-shadow: 8px 10px 15px 12px rgba(0, 0, 0, 0.468), 
+                inset 0px 0px 30px 20px rgba(255, 172, 172, 0.474), 
+                inset 10px 10px 15px 10px rgba(255, 180, 180, 0.33);
+    cursor: pointer;
+    transition: 0.08s ease-in-out;
+}
+
+.botao:hover {
+    background-color: rgb(208, 6, 6);
+    box-shadow: 8px 10px 15px 12px rgba(0, 0, 0, 0.468), 
+                inset 0px 0px 30px 20px rgba(255, 255, 255, 0.337), 
+                inset 10px 10px 15px 10px rgba(255, 255, 255, 0.191);
+}
+
+.botao:active {
+    transform: translate(8px, 10px);
+    box-shadow: 2px 8px 12px 6px rgba(0, 0, 0, 0.558), 
+                inset 0px 0px 30px 20px rgba(255, 255, 255, 0.337), 
+                inset 10px 10px 15px 10px rgba(255, 255, 255, 0.191);
+}
