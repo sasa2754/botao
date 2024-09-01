@@ -44,3 +44,53 @@ body {
                 inset 0px 0px 30px 20px rgba(255, 255, 255, 0.337), 
                 inset 10px 10px 15px 10px rgba(255, 255, 255, 0.191);
 }
+
+
+.heart {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    width: 300px;
+}
+
+.topleft {
+    transform: rotate(-45deg);
+}
+
+.bottomleft{
+    transform: rotate(225deg);
+
+}
+
+.topright {
+    transform: rotate(45deg);
+
+}
+
+.bottomright {
+    transform: rotate(135deg);
+}
+
+.heart.topleft.move {
+    transition: 1.5s transform ease-in-out;
+
+    transform: translate(-500%, -500%) rotate(-45deg);
+}
+
+.heart.bottomleft.move {
+    transition: 1.5s transform ease-in-out;
+    transform: translate(-500%, 500%) rotate(225deg);
+}
+
+
+.heart.topright.move {
+    transition: 1.5s transform ease-in-out;
+    transform: translate(500%, -500%) rotate(45deg);
+}
+
+.heart.bottomright.move {
+    transition: 1.5s transform ease-in-out;
+    transform: translate(500%, 500%)  rotate(135deg);
+}
